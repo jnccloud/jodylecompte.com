@@ -1,9 +1,4 @@
-const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+'use strict';
 
-exports.onCreateWebpackConfig = ({ actions }) => {
-  actions.setWebpackConfig({
-    resolve: {
-      plugins: [new TsconfigPathsPlugin()],
-    },
-  });
-};
+exports.createPages = require('./gatsby/create-pages');
+exports.onCreateNode = require('./gatsby/on-create-node');
