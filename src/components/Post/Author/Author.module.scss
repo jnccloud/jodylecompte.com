@@ -1,0 +1,44 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.author {
+  border-top: 1px solid $color-gray-border;
+  max-width: $layout-post-width;
+  padding-top: 20px;
+  @include line-height(1);
+  @include margin-top(1);
+  @include margin-bottom(2);
+  display: flex;
+  align-items: center;
+  justify-content: space-aroun;
+
+  &__bio {
+    &-twitter {
+      display: block;
+      text-decoration: underline;
+    }
+  }
+}
+
+.author__bio_box {
+  margin-left: 20px;
+  width: 75%;
+
+  p {
+    // width: 75%;
+    // margin: 0 auto;
+  }
+}
+
+.author__photo {
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+@include breakpoint-sm {
+  .author {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
