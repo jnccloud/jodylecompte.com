@@ -1,49 +1,49 @@
-'use strict';
+"use strict";
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
-  pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-  copyright: '© All rights reserved.',
-  disqusShortname: '',
-  postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  url: "https://jodylecompte.com",
+  pathPrefix: "/",
+  title: "JodyLeCompte.com",
+  subtitle: "Blog posts about technology, programming, and SalesForce.",
+  copyright:
+    `© ${new Date().getFullYear()} Jody LeCompte. All Right Reserved. Bootstapped with Gatsby-Starter-Lumen.`,
+  disqusShortname: "",
+  postsPerPage: 5,
+  googleAnalyticsId: "UA-136589283-1",
   useKatex: false,
   menu: [
     {
-      label: 'Articles',
-      path: '/'
+      label: "Posts",
+      path: "/"
     },
     {
-      label: 'About me',
-      path: '/pages/about'
+      label: "About Me",
+      path: "/pages/about"
     },
     {
-      label: 'Contact me',
-      path: '/pages/contacts'
+      label: "Portfolio",
+      path: "/portfolio"
+    },
+    {
+      label: "Categories",
+      path: "/categories"
+    },
+    {
+      label: "Tags",
+      path: "/tags"
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: "Jody LeCompte",
+    photo: "/photo.jpg",
+    bio:
+      "I am a father, fisherman, and full stack developer dedicated to helping others to learn and reach their maximum potential while I work to reach my own.",
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '',
-      vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
-      line: '',
-      gitlab: '',
-      weibo: '',
-      codepen: '',
-      youtube: '',
-      soundcloud: '',
+      email: "jody@jodylecompte.com",
+      twitter: "jody_lecompte",
+      linkedin: "jody-lecompte-7b562812b/",
+      codepen: "jodylecompte",
+      github: "jodylecompte"
     }
   }
 };

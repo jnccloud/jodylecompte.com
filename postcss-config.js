@@ -12,7 +12,6 @@ module.exports = [
     propList: [
       'font',
       'font-size',
-      'height',
       'line-height',
       'letter-spacing',
       'margin',
