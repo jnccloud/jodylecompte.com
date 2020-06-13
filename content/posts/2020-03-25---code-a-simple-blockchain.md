@@ -70,7 +70,7 @@ The next step will be to be able to hash the contents of the block to create its
 Let's start by installing a library called CryptoJS that contains the hashing functions we will use and adding its import to the top of our `block.js` file.
 
 ```terminal
-$ npm install cryptojs
+$ npm install crypto-js
 ```
 
 ```js
@@ -167,6 +167,8 @@ class BlockChain {
     this.chain.push(block);
   }
 }
+
+module.exports.BlockChain = BlockChain;
 ```
 
 In the above, we have two important things happening.
