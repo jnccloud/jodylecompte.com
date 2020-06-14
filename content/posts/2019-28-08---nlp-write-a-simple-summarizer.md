@@ -114,7 +114,7 @@ available by [Voice of America](https://www.voanews.com/africa/malawi-grooms-fut
 
 [Malawi Grooms Future Female Scientists Through Science Camp](https://www.voanews.com/africa/malawi-grooms-future-female-scientists-through-science-camp)
 
-I simply grabbed the text off this page by copying and pasting, but you can also grab a copy from Github [here](https://github.com/jodylecompte/NLP-Simple-Summarizer/blob/master/data.txt). I did not do any cleanup or formatting of this text except to remove images as this will be something we handle with our code.
+I simply grabbed the text off this page by copying and pasting, but you can also grab a copy from Github [here](https://github.com/jodylecompte/NLP-Simple-Summarizer/blob/main/data.txt). I did not do any cleanup or formatting of this text except to remove images as this will be something we handle with our code.
 
 ## Create a Text Summary
 
