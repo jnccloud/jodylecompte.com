@@ -154,7 +154,7 @@ with open("data.txt") as f:
         ord('\r') : None
     }
 
-    data = data.translate(replace)
+    content = data.translate(replace)
 
 print(data)
 ```
