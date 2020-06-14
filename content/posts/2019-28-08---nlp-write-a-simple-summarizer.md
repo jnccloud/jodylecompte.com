@@ -52,7 +52,7 @@ Tokenization is the process by which we will take our sentences and break them d
 We will look at this much closer in a moment with supporting code as well, but in short, given the following sentence:
 
 ```
-The giant yellow bumblebee flew to the next juicy flower.
+The giant yellow bumblebee flew to the next juicy yellow flower.
 ```
 
 We should the receive something very similar to this:
