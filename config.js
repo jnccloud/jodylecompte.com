@@ -5,8 +5,7 @@ module.exports = {
   pathPrefix: "/",
   title: "JodyLeCompte.com",
   subtitle: "Blog posts about technology, programming, and SalesForce.",
-  copyright:
-    `© ${new Date().getFullYear()} Jody LeCompte. All Right Reserved. Bootstapped with Gatsby-Starter-Lumen.`,
+  copyright: `© ${new Date().getFullYear()} Jody LeCompte. All Right Reserved. Bootstapped with Gatsby-Starter-Lumen.`,
   disqusShortname: "",
   postsPerPage: 5,
   googleAnalyticsId: "UA-136589283-1",
@@ -14,24 +13,24 @@ module.exports = {
   menu: [
     {
       label: "Posts",
-      path: "/"
+      path: "/",
     },
     {
       label: "About Me",
-      path: "/pages/about"
+      path: "/pages/about",
     },
-    {
-      label: "Portfolio",
-      path: "/portfolio"
-    },
+    // {
+    //   label: "Portfolio",
+    //   path: "/portfolio"
+    // },
     {
       label: "Categories",
-      path: "/categories"
+      path: "/categories",
     },
     {
       label: "Tags",
-      path: "/tags"
-    }
+      path: "/tags",
+    },
   ],
   author: {
     name: "Jody LeCompte",
@@ -43,7 +42,7 @@ module.exports = {
       twitter: "jody_lecompte",
       linkedin: "jody-lecompte-7b562812b/",
       codepen: "jodylecompte",
-      github: "jodylecompte"
-    }
-  }
+      github: "jodylecompte",
+    },
+  },
 };
