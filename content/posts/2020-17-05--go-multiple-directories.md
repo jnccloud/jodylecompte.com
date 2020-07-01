@@ -7,14 +7,14 @@ slug: "/posts/go-structure-your-go-project/"
 category: "Development"
 tags:
   - "Golang"
-description: "A common problem developers run into is the question of how to structure your project's files and directories. In GoLang, this is not only a philosphoical question but also a technical one as well. Let's look at 
+description: "A common problem developers run into is the question of how to structure your project's files and directories. In GoLang, this is not only a philosophical question but also a technical one as well. Let's look at 
 how to break your code into separate directories."
 socialImage: "/media/packages.jpg"
 ---
 
 ## Prerequisites
 
-This post assumes you are familiar with at least the basics of compiling and running Go applications and have Go installed on your developent machine. No advanced techniques will be used here and the only stdib package we will be using is the fmt package. 
+This post assumes you are familiar with at least the basics of compiling and running Go applications and have Go installed on your development machine. No advanced techniques will be used here and the only stdib package we will be using is the fmt package. 
 
 ## No Opinions Here
 This post is not going to discuss the trade offs or opinions around how to structure your app a specific way, only the technique used to do it. For more
@@ -31,7 +31,7 @@ Coming from a background in JavaScript and Python, I was used to being able to i
 When experimenting with Golang and trying to split my files into different directories, I quickly realized that Go approaches things a little bit differently. With each directory often being it's own package, and imports working based off directories not invidual files. This makes the approach to import files a little different as well.
 
 ## The Solution
-Let's look at an extremely simple project where we utilize two sub direcoties to contain some of our code. I have chosen to call these directories `models` and `routes` in this example since they are common parts of your average web application, but they can be whatever unit of division makes sense for your code and use case. 
+Let's look at an extremely simple project where we utilize two subdirectories to contain some of our code. I have chosen to call these directories `models` and `routes` in this example since they are common parts of your average web application, but they can be whatever unit of division makes sense for your code and use case. 
 
 Create the following folder structure:
 
@@ -43,7 +43,7 @@ $ mkdir routes
 ```
 
 ## Go Modules
-The next step is to actually initalize our Go module, this is the most importnt step as the rest of our setup hinges on this setup. 
+The next step is to actually initialize our Go module, this is the most importnt step as the rest of our setup hinges on this setup. 
 
 ```
 $ go mod init github.com/jodylecompte/go-multiple-directories-example
@@ -52,7 +52,7 @@ $ go mod init github.com/jodylecompte/go-multiple-directories-example
 I want to draw a bit of attention specifically to this point. I have chosen to use the Github URL of the final source code for the module name, but don't let this confuse you. This led me to believe that you had to upload code to GitHub prior to being able to use it and constantly update back and forth. This is strictly a label and does not require the code be pushed before use. 
 
 ## Flushing Out Our Files
-Inside the models directory, create a new file called `users.go` with the follwoing code:
+Inside the models directory, create a new file called `users.go` with the following code:
 
 ```go
 package models
@@ -106,7 +106,7 @@ func main() {
 
 Let's circle back to the name we provided when we created our go module and you'll see we used the same name when importing our other packages.
 
-An important distinction to make here is that we are not importing individual files, but importing entire packages. Any function in any file in those directories that begins with a capital letter will be exported and publically available and imported in for use in the above file. 
+An important distinction to make here is that we are not importing individual files, but importing entire packages. Any function in any file in those directories that begins with a capital letter will be exported and publicly available and imported in for use in the above file. 
 
 We then access our functions in those files from the package name that they are contained within such as `models.AllUsers`. 
 
@@ -114,4 +114,4 @@ We then access our functions in those files from the package name that they are 
 You can find the source code above on [GitHub](https://github.com/jodylecompte/go-multiple-directories-example)
 
 ## Conclusion
-It's pretty simple but it gave me a significant amount of confusion and in my attempts to learn I came across dozens of other cases of people being confused so hopefully this sets the record straight and enables you to begin breaking your Go program down into multiple directories when your code and use case make sense. 
+It's pretty simple but it gave me a significant amount of confusion and in my attempts to learn, I came across dozens of other cases of people being confused, so hopefully this sets the record straight and enables you to begin breaking your Go program down into multiple directories when your code and use case make sense. 
